@@ -1,5 +1,7 @@
 package clase;
 
+import java.util.Arrays;
+
 public class Asignatura {
 
 	private String nombre;
@@ -37,6 +39,12 @@ public class Asignatura {
 	public void setEvaluaciones(float calificaciones) {
 		this.evaluaciones[contador] = calificaciones;
 		contador++;
+	}
+
+
+	public String toString() {
+		return "Asignatura [nombre=" + nombre + ", evaluaciones=" + Arrays.toString(evaluaciones) + ", nota_final="
+				+ nota_final + ", contador=" + contador + "]";
 	}
 
 

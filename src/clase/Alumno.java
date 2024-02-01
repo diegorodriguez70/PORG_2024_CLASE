@@ -38,6 +38,11 @@ public class Alumno {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
+
+	public String toString() {
+		return "Alumno [nombre=" + nombre + ", apellidos=" + apellidos + ", calificaciones=" + calificaciones
+				+ ", telefono=" + telefono + "]";
+	}
 	
 	
 }
