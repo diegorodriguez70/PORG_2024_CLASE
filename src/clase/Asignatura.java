@@ -5,9 +5,11 @@ public class Asignatura {
 	private String nombre;
 	private float evaluaciones[];
 	private float nota_final;
+	private int contador;
 
-	public Asignatura() {
+	public Asignatura(String nombre) {
 		evaluaciones = new float[3];
+		this.nombre=nombre;
 
 	}
 
@@ -32,7 +34,10 @@ public class Asignatura {
 		return evaluaciones;
 	}
 
-	public void setEvaluaciones(float[] evaluaciones) {
-		this.evaluaciones = evaluaciones;
+	public void setEvaluaciones(float calificaciones) {
+		this.evaluaciones[contador] = calificaciones;
+		contador++;
 	}
+
+
 }

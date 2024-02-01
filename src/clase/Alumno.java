@@ -22,8 +22,15 @@ public class Alumno {
 	public float getCalificaciones() {
 		return calificaciones;
 	}
-	public void setCalificaciones(float calificaciones) {
-		this.calificaciones = calificaciones;
+	public void setCalificaciones(float calificaciones, Asignatura asignatura) {
+		if(calificaciones>-1 && calificaciones<11) {
+			
+//			this.calificaciones = calificaciones;
+			asignatura.setEvaluaciones(calificaciones);
+			
+		}
+		
+		
 	}
 	public String getTelefono() {
 		return telefono;
