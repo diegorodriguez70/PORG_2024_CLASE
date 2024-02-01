@@ -1,9 +1,17 @@
 package clase;
 
+import java.util.Arrays;
+
 public class Aula {
 	private Alumno capacidad[];
 	private int contador;
 	
+	
+	public String toString() {
+		return "Aula [capacidad=" + Arrays.toString(capacidad) + ", contador=" + contador + "]";
+	}
+
+
 	public Aula() {
 		capacidad= new Alumno[5];
 	}
