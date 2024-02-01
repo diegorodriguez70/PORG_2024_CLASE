@@ -9,6 +9,7 @@ public class Alumno {
 	private Asignatura calificacionesFinal[];
 	private String telefono;
 	private int contador;
+	private float media;
 	
 
 	public Alumno() {
@@ -63,6 +64,14 @@ public class Alumno {
 
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
+	}
+	
+	public float laMedia(Asignatura asignatura1, Asignatura asignatura2, Asignatura asignatura3, Asignatura asignatura4) {
+	
+			this.media=(asignatura1.getNota_final()+asignatura2.getNota_final()+asignatura3.getNota_final()+asignatura4.getNota_final())/4;
+			
+			return media;
+
 	}
 
 	public String toString() {

@@ -17,7 +17,11 @@ public class Aula {
 		contador=0;
 	}
 	
-	
+	public float media(float media1, float media2) {
+		
+		return ((media1+media2)/2);
+		
+	}
 	public void setAlumno(Alumno alumno) {
 		capacidad[contador]=alumno;
 		contador++;

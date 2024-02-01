@@ -17,7 +17,7 @@ public class Start {
 		alumno1.setCalificaciones(4,3,10, asignatura2);
 		alumno1.setCalificaciones(3, 3, 7, asignatura3);
 		alumno1.setCalificaciones(5, 8, 7, asignatura4);
-		
+		float mediaPrimero=alumno1.laMedia(asignatura1, asignatura2, asignatura3, asignatura4);
 		asignatura1.reset();
 		asignatura2.reset();
 		asignatura3.reset();
@@ -29,9 +29,10 @@ public class Start {
 		alumno2.setCalificaciones(9,3,1, asignatura2);
 		alumno2.setCalificaciones(4, 8, 2, asignatura3);
 		alumno2.setCalificaciones(5, 10, 10, asignatura4);
-		
+		float mediaSegundo=alumno2.laMedia(asignatura1, asignatura2, asignatura3, asignatura4);
 		aula1.setAlumno(alumno2);
 		aula1.setAlumno(alumno1);
+		System.out.println(aula1.media(mediaPrimero, mediaSegundo));
 		System.out.println(aula1);
 
 		
