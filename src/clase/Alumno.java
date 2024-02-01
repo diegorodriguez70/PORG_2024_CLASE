@@ -31,7 +31,7 @@ public class Alumno {
 			
 			asignatura.setEvaluaciones(calificaciones);
 			asignatura.calcularMediaFinal();
-			this.calificacionesFinal = calificaciones;
+			this.calificacionesFinal = 	asignatura.getNota_final();
 			
 		}
 	

@@ -8,7 +8,7 @@ public class Aula {
 	
 	
 	public String toString() {
-		return "Aula [capacidad=" + Arrays.toString(capacidad) + ", contador=" + contador + "]";
+		return "Aula [" + Arrays.toString(capacidad) + ", contador=" + contador + "]";
 	}
 
 

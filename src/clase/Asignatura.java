@@ -47,5 +47,13 @@ public class Asignatura {
 				+ nota_final + ", contador=" + contador + ")";
 	}
 
+	public float getNota_final() {
+		return nota_final;
+	}
+
+	public void setNota_final(float nota_final) {
+		this.nota_final = nota_final;
+	}
+
 
 }
