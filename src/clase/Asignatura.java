@@ -19,4 +19,20 @@ public class Asignatura {
 		nota_final = nota_final / 3;
 		return nota_final;
 	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public float[] getEvaluaciones() {
+		return evaluaciones;
+	}
+
+	public void setEvaluaciones(float[] evaluaciones) {
+		this.evaluaciones = evaluaciones;
+	}
 }

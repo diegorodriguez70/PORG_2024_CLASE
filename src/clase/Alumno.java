@@ -7,5 +7,30 @@ public class Alumno {
 	private float calificaciones;
 	private String telefono;
 	
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public String getApellidos() {
+		return apellidos;
+	}
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
+	public float getCalificaciones() {
+		return calificaciones;
+	}
+	public void setCalificaciones(float calificaciones) {
+		this.calificaciones = calificaciones;
+	}
+	public String getTelefono() {
+		return telefono;
+	}
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
+	
 	
 }
