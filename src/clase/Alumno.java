@@ -79,4 +79,5 @@ public class Alumno {
 				+ Arrays.toString(calificacionesFinal) + "\n, telefono=" + telefono + ")";
 	}
 
+
 }

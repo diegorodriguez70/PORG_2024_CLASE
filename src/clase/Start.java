@@ -21,8 +21,14 @@ public class Start {
 		alumno1.setCalificaciones(3, 3, 7, asignatura3);
 		alumno1.setCalificaciones(5, 8, 7, asignatura4);
 		
+		
+		//hacer la media de las notas del alumno
 		float mediaPrimero=alumno1.laMedia(asignatura1, asignatura2, asignatura3, asignatura4);
-	
+		
+		System.out.println("Aula [\n");
+		System.out.println(alumno1);
+		
+		
 		//reset de los valores de las asignaturas para poder usarlas luego 
 		asignatura1.reset();
 		asignatura2.reset();
@@ -38,19 +44,23 @@ public class Start {
 		alumno2.setCalificaciones(4, 8, 2, asignatura3);
 		alumno2.setCalificaciones(5, 10, 10, asignatura4);
 		
+		
+		//hacer la media de las notas del alumno
 		float mediaSegundo=alumno2.laMedia(asignatura1, asignatura2, asignatura3, asignatura4);
+		System.out.println(alumno2+ "\n]");
+	
 		
 		//settear los alumnos al aula
-		aula1.setAlumno(alumno2);
 		aula1.setAlumno(alumno1);
+		aula1.setAlumno(alumno2);
 		
-		//Syso de todo el aula
-		System.out.println(aula1);
+
+
+
+	
 		
 		//Syso de la media
 		System.out.println("\n\nLa media de la clase es "+aula1.media(mediaPrimero, mediaSegundo));
-		
-	
 
 		
 
