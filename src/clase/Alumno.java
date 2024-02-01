@@ -9,6 +9,7 @@ public class Alumno {
 	private Asignatura calificacionesFinal[];
 	private String telefono;
 	private int contador;
+	
 
 	public Alumno() {
 		contador = 0;
@@ -65,8 +66,8 @@ public class Alumno {
 	}
 
 	public String toString() {
-		return "(nombre=" + nombre + ", apellidos=" + apellidos + "Notas finales ="
-				+ Arrays.toString(calificacionesFinal) + ", telefono=" + telefono + ")";
+		return "\n\n(nombre=" + nombre + ", apellidos=" + apellidos + " notas finales ="
+				+ Arrays.toString(calificacionesFinal) + "\n, telefono=" + telefono + ")";
 	}
 
 }

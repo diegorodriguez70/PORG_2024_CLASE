@@ -8,16 +8,18 @@ public class Aula {
 	
 	
 	public String toString() {
-		return "Aula [" + Arrays.toString(capacidad) + ", contador=" + contador + "]";
+		return "Aula [" + Arrays.toString(capacidad) + "]";
 	}
 
 
 	public Aula() {
 		capacidad= new Alumno[5];
+		contador=0;
 	}
 	
 	
-	public void serAlumno(Alumno alumno) {
+	public void setAlumno(Alumno alumno) {
 		capacidad[contador]=alumno;
+		contador++;
 	}
 }

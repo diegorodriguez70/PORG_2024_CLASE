@@ -3,7 +3,7 @@ package clase;
 import java.util.Arrays;
 
 public class Asignatura {
-
+	
 	private String nombre;
 	private float evaluaciones[];
 	private float nota_final;
@@ -22,6 +22,16 @@ public class Asignatura {
 		}
 		nota_final = nota_final / 3;
 		return nota_final;
+	}
+	
+	public void reset() {
+		this.evaluaciones[0]=0;
+		this.evaluaciones[1]=0;
+		this.evaluaciones[2]=0;
+
+		this.contador=0;
+		this.nota_final=0;
+		
 	}
 
 	public int getContador() {
@@ -51,8 +61,8 @@ public class Asignatura {
 
 
 	public String toString() {
-		return "Asignatura (nombre=" + nombre + ", evaluaciones=" + Arrays.toString(evaluaciones) + ", nota_final="
-				+ nota_final + ", contador=" + contador + ")";
+		return "\nAsignatura (nombre=" + nombre + ", evaluaciones=" + Arrays.toString(evaluaciones) + ", nota_final="
+				+ nota_final + ")";
 	}
 
 	public float getNota_final() {
