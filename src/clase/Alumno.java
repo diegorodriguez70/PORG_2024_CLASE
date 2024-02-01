@@ -40,7 +40,7 @@ public class Alumno {
 	}
 
 	public String toString() {
-		return "Alumno [nombre=" + nombre + ", apellidos=" + apellidos 
+		return "Alumno [nombre=" + nombre + ", apellidos=" + apellidos +""
 				+ ", telefono=" + telefono + "]";
 	}
 	
