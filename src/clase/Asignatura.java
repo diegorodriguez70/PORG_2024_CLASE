@@ -24,6 +24,14 @@ public class Asignatura {
 		return nota_final;
 	}
 
+	public int getContador() {
+		return contador;
+	}
+
+	public void setContador(int contador) {
+		this.contador = contador;
+	}
+
 	public String getNombre() {
 		return nombre;
 	}
