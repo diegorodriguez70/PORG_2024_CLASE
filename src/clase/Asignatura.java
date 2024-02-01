@@ -43,8 +43,8 @@ public class Asignatura {
 
 
 	public String toString() {
-		return "Asignatura [nombre=" + nombre + ", evaluaciones=" + Arrays.toString(evaluaciones) + ", nota_final="
-				+ nota_final + ", contador=" + contador + "]";
+		return "Asignatura (nombre=" + nombre + ", evaluaciones=" + Arrays.toString(evaluaciones) + ", nota_final="
+				+ nota_final + ", contador=" + contador + ")";
 	}
 
 

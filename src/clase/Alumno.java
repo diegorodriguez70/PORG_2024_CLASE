@@ -4,8 +4,10 @@ public class Alumno {
 
 	private String nombre;
 	private String apellidos;
-	//private float calificaciones;
+	private float calificacionesFinal;
 	private String telefono;
+	
+	
 	
 	public String getNombre() {
 		return nombre;
@@ -19,17 +21,20 @@ public class Alumno {
 	public void setApellidos(String apellidos) {
 		this.apellidos = apellidos;
 	}
-//	public float getCalificaciones() {
-//		return calificaciones;
-//	}
+	public float getCalificaciones() {
+	
+		return calificacionesFinal;
+	}
 	public void setCalificaciones(float calificaciones, Asignatura asignatura) {
 		if(calificaciones>-1 && calificaciones<11) {
 			
-//			this.calificaciones = calificaciones;
+			
 			asignatura.setEvaluaciones(calificaciones);
+			asignatura.calcularMediaFinal();
+			this.calificacionesFinal = calificaciones;
 			
 		}
-		
+	
 		
 	}
 	public String getTelefono() {
@@ -40,8 +45,8 @@ public class Alumno {
 	}
 
 	public String toString() {
-		return "Alumno [nombre=" + nombre + ", apellidos=" + apellidos +""
-				+ ", telefono=" + telefono + "]";
+		return "(nombre=" + nombre + ", apellidos=" + apellidos +"Notas finales ="+calificacionesFinal
+				+ ", telefono=" + telefono + ")";
 	}
 	
 	
